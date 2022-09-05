@@ -1,12 +1,9 @@
-from dotenv import load_dotenv
 from os import getenv
 
 from HeroCode import create_app
 
 
 def main():
-    load_dotenv()
-
     host = getenv('host')
     port = getenv('port')
     debug = getenv('debug') == '1'
